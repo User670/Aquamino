@@ -4,14 +4,14 @@ local menu={modeKey=1}
 local flashT,enterT,clickT=0,0,0
 menu.modelist={'40 lines','marathon','ice storm','thunder','smooth','master','multitasking','sandbox'}
 local modename={
-    ['40 lines']="40行",
-    marathon="马拉松",
-    ['ice storm']="冰风暴",
-    thunder="雷暴",
-    smooth="丝滑40行",
-    master="宗师",
-    multitasking="多线程",
-    sandbox="沙盒子"
+    ['40 lines']="Sprint",
+    marathon="Marathon",
+    ['ice storm']="Ice Storm",
+    thunder="Thunder",
+    smooth="Smooth Sprint",
+    master="Master",
+    multitasking="Multitask",
+    sandbox="Sandbox"
 }
 
 function menu.init()
@@ -103,7 +103,7 @@ function menu.draw()
     gc.printf(modename[menu.modelist[menu.modeKey]],Exo_2,-750,-540,1000,'center',0,1.5,1.5)
 
     gc.setColor(1,1,1,.5-.15*cos(scene.time%8*math.pi/4))
-    gc.printf("双击/按Enter键开始游戏\n按R键随机跳转",
+    gc.printf("Double click / Enter to start\nR for random mode",
         Exo_2,0,0,2000,'center',0,.6,.6,1000,512/3)
 
     gc.setLineWidth(3)

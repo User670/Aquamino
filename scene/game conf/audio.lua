@@ -32,7 +32,7 @@ function audio.init()
             gc.setLineWidth(3)
             gc.rectangle('line',-w/2,-h/2,w,h,6)
             gc.setColor(1,1,1)
-            gc.printf("返回",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+            gc.printf("Back",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
         end,
         event=function()
             scene.switch({
@@ -63,7 +63,7 @@ function audio.init()
             gc.setColor(r,g,b,2*t)
             gc.rectangle('fill',-w/2,-h/2,h,h)
             gc.setColor(1,1,1)
-            gc.printf("失去焦点自动静音",Exo_2_SB,w/2+25,0,1200,'left',0,.25,.25,0,84)
+            gc.printf("Mute when lost focus",Exo_2_SB,w/2+25,0,1200,'left',0,.25,.25,0,84)
         end,
         event=function()
             audio.info.distractCut=not audio.info.distractCut
@@ -81,7 +81,7 @@ function audio.init()
             gc.setLineWidth(6)
             gc.rectangle('line',-419,-19,838,38)
             gc.setColor(1,1,1)
-            gc.printf(string.format("音乐音量:%.0f%% = %.2fdB",
+            gc.printf(string.format("Music: %.0f%% = %.2fdB",
                     audio.info.mus*100,audio.info.mus==0 and -1e999 or math.log(audio.info.mus,10)*10
                 ),Consolas,-419,-48,114514,'left',0,.3125,.3125,0,56)
         end,
@@ -104,7 +104,7 @@ function audio.init()
             gc.setLineWidth(6)
             gc.rectangle('line',-419,-19,838,38)
             gc.setColor(1,1,1)
-            gc.printf(string.format("音效音量:%.0f%% = %.2fdB",
+            gc.printf(string.format("Sound: %.0f%% = %.2fdB",
                     audio.info.sfx*100,audio.info.sfx==0 and -1e999 or math.log(audio.info.sfx,10)*10
                 ),Consolas,-419,-48,114514,'left',0,.3125,.3125,0,56)
         end,
@@ -134,7 +134,7 @@ function audio.update(dt)
 end
 function audio.draw()
     gc.setColor(1,1,1)
-    gc.printf("音频设置",SYHT,0,-460,1280,'center',0,1,1,640,64)
+    gc.printf("Audio",SYHT,0,-460,1280,'center',0,1,1,640,64)
     BUTTON.draw() SLIDER.draw()
 end
 function audio.exit()

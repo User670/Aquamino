@@ -291,7 +291,7 @@ function mino.init()
         if mino.theme.init then mino.theme.init(P[i]) end
         print(P[i].cur.piece)
     end
-    curPlayTxt="当前播放 : "..mino.musInfo
+    curPlayTxt="Now playing: "..mino.musInfo
 end
 
 local success

@@ -323,8 +323,8 @@ function love.draw()
     if scene.cur.draw then scene.cur.draw() end
     if scene.watermark then
         gc.setColor(.5,1,.75,.25+.05*sin(scene.totalTime*5*math.pi))
-        gc.printf("作者：Aqua6623",Consolas_B,480*sin(scene.totalTime/2*math.pi),-440,5000,'center',0,.5,.5,2500,56)
-        gc.printf("未经授权禁止转载",Consolas_B,-480*sin(scene.totalTime/2*math.pi),440,5000,'center',0,.5,.5,2500,56)
+        gc.printf("Made by Aqua6623",Consolas_B,480*sin(scene.totalTime/2*math.pi),-440,5000,'center',0,.5,.5,2500,56)
+        gc.printf("Unauthorized repost forbidden",Consolas_B,-480*sin(scene.totalTime/2*math.pi),440,5000,'center',0,.5,.5,2500,56)
     end
     gc.setColor(1,1,1)
     if scene.anim then scene.anim() end

@@ -37,7 +37,7 @@ function bc.init()
             gc.setLineWidth(3)
             gc.rectangle('line',-w/2,-h/2,w,h,6)
             gc.setColor(1,1,1)
-            gc.printf("返回",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+            gc.printf("Back",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
         end,
         event=function()
             scene.switch({
@@ -58,7 +58,7 @@ function bc.init()
             gc.setLineWidth(3)
             gc.rectangle('line',-w/2,-h/2,w,h,6)
             gc.setColor(1,1,1)
-            gc.printf("重置所有",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+            gc.printf("Reset all",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
         end,
         event=function()
             if not canAdjustColor[skinName] then return end
@@ -81,7 +81,7 @@ function bc.init()
             gc.setLineWidth(3)
             gc.rectangle('line',-w/2,-h/2,w,h,6)
             gc.setColor(1,1,1)
-            gc.printf("重置当前",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+            gc.printf("Reset this",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
         end,
         event=function()
             if not canAdjustColor[skinName] then return end
@@ -217,11 +217,11 @@ end
 local w,h,x,y
 function bc.draw()
     gc.setColor(1,1,1)
-    gc.printf("调整方块颜色",SYHT,0,-500,1280,'center',0,.6,.6,640,64)
+    gc.printf("Adjust block colors",SYHT,0,-500,1280,'center',0,.6,.6,640,64)
     if canAdjustColor[skinName] then gc.setColor(1,1,1,.6)
-        gc.printf("该皮肤可自由调整颜色。",Exo_2_SB,0,-40,10000,'center',0,.4,.4,5000,84)
+        gc.printf("Custom colors available for this skin.",Exo_2_SB,0,-40,10000,'center',0,.4,.4,5000,84)
     else gc.setColor(1,1,1,.6)
-        gc.printf("该皮肤不可调整颜色。",Exo_2_SB,0,-40,10000,'center',0,.4,.4,5000,84)
+        gc.printf("Custom colors unavailable for this skin.",Exo_2_SB,0,-40,10000,'center',0,.4,.4,5000,84)
     end
     BUTTON.draw() SLIDER.draw()
 

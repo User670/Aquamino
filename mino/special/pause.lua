@@ -10,7 +10,7 @@ function pause.init(mino)
             gc.setColor(.5,.5,.5,.5+2*t)
             gc.rectangle('fill',-300,-50,600,100)
             gc.setColor(1,1,1)
-            gc.printf("继续",SYHT,0,0,1280,'center',0,.5,.5,640,96)
+            gc.printf("Continue",SYHT,0,0,1280,'center',0,.5,.5,640,96)
         end,
         event=function()
             scene.cur.paused=false
@@ -22,7 +22,7 @@ function pause.init(mino)
             gc.setColor(.5,.5,.5,.5+2*t)
             gc.rectangle('fill',-300,-50,600,100)
             gc.setColor(1,1,1)
-            gc.printf("重开",SYHT,0,0,1280,'center',0,.5,.5,640,96)
+            gc.printf("Restart",SYHT,0,0,1280,'center',0,.5,.5,640,96)
         end,
         event=function()
             scene.dest='solo' scene.destScene=require'mino/game'
@@ -38,7 +38,7 @@ function pause.init(mino)
             gc.setColor(.5,.5,.5,.5+2*t)
             gc.rectangle('fill',-300,-50,600,100)
             gc.setColor(1,1,1)
-            gc.printf("退出",SYHT,0,0,1280,'center',0,.5,.5,640,96)
+            gc.printf("Quit",SYHT,0,0,1280,'center',0,.5,.5,640,96)
         end,
         event=function()
             scene.dest=mino.exitScene or 'menu'

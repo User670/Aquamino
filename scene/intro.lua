@@ -54,7 +54,7 @@ function intro.init()
             local w,h=bt.w,bt.h
             btdraw(3.5,w,h,1,t)
             gc.setColor(1,1,1)
-            gc.printf(unlocked[1] and "练习" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
+            gc.printf(unlocked[1] and "Practice" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
         end,
         event=function()
             if not unlocked[1] then return end
@@ -80,7 +80,7 @@ function intro.init()
             local w,h=bt.w,bt.h
             btdraw(2.5,w,h,2,t)
             gc.setColor(1,1,1)
-            gc.printf(unlocked[2] and "挑战" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
+            gc.printf(unlocked[2] and "Challenge" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
         end,
         event=function()
             if not unlocked[2] then return end
@@ -106,7 +106,7 @@ function intro.init()
             local w,h=bt.w,bt.h
             btdraw(2.5,w,h,3,t)
             gc.setColor(1,1,1)
-            gc.printf(unlocked[3] and "秘境" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
+            gc.printf(unlocked[3] and "Mystery" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
         end,
         event=function()
             if not unlocked[3] then return end
@@ -131,7 +131,7 @@ function intro.init()
             local w,h=bt.w,bt.h
             btdraw(2.5,w,h,4,t)
             gc.setColor(1,1,1)
-            gc.printf(unlocked[4] and "理堂" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
+            gc.printf(unlocked[4] and "Hall of Fame" or "???",Exo_2_SB,0,0,1280,'center',0,.75,.75,640,84)
         end,
         event=function()
             if not unlocked[4] then return end

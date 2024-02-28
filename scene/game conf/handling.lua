@@ -27,7 +27,7 @@ function hand.init()
             gc.setLineWidth(3)
             gc.rectangle('line',-w/2,-h/2,w,h,6)
             gc.setColor(1,1,1)
-            gc.printf("返回",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+            gc.printf("Back",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
         end,
         event=function()
             scene.switch({
@@ -47,7 +47,7 @@ function hand.init()
             gc.setLineWidth(6)
             gc.rectangle('line',-519,-19,1038,38)
             gc.setColor(1,1,1)
-            gc.printf(string.format("自动移动延迟(ASD,旧称DAS):%.0fms = %.2fF(60 FPS)",hand.ctrl.ASD*1000,hand.ctrl.ASD*60),
+            gc.printf(string.format("Auto Shift Delay (ASD, DAS): %.0fms = %.2fF(60 FPS)",hand.ctrl.ASD*1000,hand.ctrl.ASD*60),
                 Consolas,-519,-48,114514,'left',0,.3125,.3125,0,56)
         end,
         buttonDraw=function(pos)
@@ -68,7 +68,7 @@ function hand.init()
             gc.setLineWidth(6)
             gc.rectangle('line',-519,-19,1038,38)
             gc.setColor(1,1,1)
-            gc.printf(string.format("自动移动周期(ASP,旧称ARR):%.0fms = %.2fF(60 FPS)",hand.ctrl.ASP*1000,hand.ctrl.ASP*60),
+            gc.printf(string.format("Auto Shift Period (ASP, ARR): %.0fms = %.2fF(60 FPS)",hand.ctrl.ASP*1000,hand.ctrl.ASP*60),
                 Consolas,-519,-48,114514,'left',0,.3125,.3125,0,56)
         end,
         buttonDraw=function(pos)
@@ -89,7 +89,7 @@ function hand.init()
             gc.setLineWidth(6)
             gc.rectangle('line',-519,-19,1038,38)
             gc.setColor(1,1,1)
-            gc.printf(string.format("软降ASD:%.0fms = %.2fF(60 FPS)",hand.ctrl.SD_ASD*1000,hand.ctrl.SD_ASD*60),
+            gc.printf(string.format("Soft drop ASD: %.0fms = %.2fF(60 FPS)",hand.ctrl.SD_ASD*1000,hand.ctrl.SD_ASD*60),
                 Consolas,-519,-48,114514,'left',0,.3125,.3125,0,56)
         end,
         buttonDraw=function(pos)
@@ -110,7 +110,7 @@ function hand.init()
             gc.setLineWidth(6)
             gc.rectangle('line',-519,-19,1038,38)
             gc.setColor(1,1,1)
-            gc.printf(string.format("软降ASP:%.0fms = %.2fF(60 FPS)",hand.ctrl.SD_ASP*1000,hand.ctrl.SD_ASP*60),
+            gc.printf(string.format("Soft drop ASP:%.0fms = %.2fF(60 FPS)",hand.ctrl.SD_ASP*1000,hand.ctrl.SD_ASP*60),
                 Consolas,-519,-48,114514,'left',0,.3125,.3125,0,56)
         end,
         buttonDraw=function(pos)
@@ -136,7 +136,7 @@ function hand.update(dt)
 end
 function hand.draw()
     gc.setColor(1,1,1)
-    gc.printf("控制设置",SYHT,0,-460,1280,'center',0,1,1,640,64)
+    gc.printf("Handling",SYHT,0,-460,1280,'center',0,1,1,640,64)
     BUTTON.draw() SLIDER.draw()
 end
 function hand.exit()

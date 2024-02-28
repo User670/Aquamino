@@ -8,7 +8,7 @@ scene.button.create('quit',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("返回",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+        gc.printf("Back",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
     end,
     event=function()
         scene.switch({
@@ -27,7 +27,7 @@ scene.button.create('test',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("测试",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+        gc.printf("Test",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
     end,
     event=function()
         scene.switch({
@@ -48,7 +48,7 @@ scene.button.create('key',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("键位设置",SYHT,0,0,1280,'center',0,.8,.8,640,96)
+        gc.printf("Key bind",SYHT,0,0,1280,'center',0,.8,.8,640,96)
     end,
     event=function()
         scene.switch({
@@ -67,7 +67,7 @@ scene.button.create('ctrl',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("控制设置",SYHT,0,0,1280,'center',0,.8,.8,640,96)
+        gc.printf("Handling",SYHT,0,0,1280,'center',0,.8,.8,640,96)
     end,
     event=function()
         scene.switch({
@@ -86,7 +86,7 @@ scene.button.create('others',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("其它设置",SYHT,0,0,1280,'center',0,.8,.8,640,96)
+        gc.printf("Other",SYHT,0,0,1280,'center',0,.8,.8,640,96)
     end,
     event=function()
         scene.switch({
@@ -105,7 +105,7 @@ scene.button.create('audio',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("音频设置",SYHT,0,0,1280,'center',0,.8,.8,640,96)
+        gc.printf("Audio",SYHT,0,0,1280,'center',0,.8,.8,640,96)
     end,
     event=function()
         scene.switch({
@@ -124,7 +124,7 @@ scene.button.create('video',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("画面设置",SYHT,0,0,1280,'center',0,.8,.8,640,96)
+        gc.printf("Graphics",SYHT,0,0,1280,'center',0,.8,.8,640,96)
     end,
     event=function()
         scene.switch({
@@ -143,7 +143,7 @@ scene.button.create('custom',{
         gc.setLineWidth(3)
         gc.rectangle('line',-w/2,-h/2,w,h,6)
         gc.setColor(1,1,1)
-        gc.printf("个性设置",SYHT,0,0,1280,'center',0,.8,.8,640,96)
+        gc.printf("Customization",SYHT,0,0,1280,'center',0,.8,.8,640,96)
     end,
     event=function()
         scene.switch({

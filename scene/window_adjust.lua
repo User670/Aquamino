@@ -40,14 +40,14 @@ function adjust.draw()
     gc.rectangle('fill',-1000,-600,2000,1200)
     gc.setColor(1,1,1)
     gc.setFont(Exo_2)
-    gc.printf("窗口调节器",-1000,-500,2000,'center',0,1,1)
+    gc.printf("Window Adjuster",-1000,-500,2000,'center',0,1,1)
     gc.printf(
 [[
-按W/A/S/D和方向键可以调整窗口位置。
-按R将分辨率重置为1120*630，并将窗口移至屏幕正中央。
+Press W/A/S/D and arrow keys to adjust window position.
+Press R to reset resolution to 1120x630 and position to center of the screen.
 ]],
         -4000,-262.6,20000,'center',0,.4,.4)
-    gc.printf("当前窗口左上角坐标："..flore(winposx+.5).." , "..flore(winposy+.5).."\n当前窗口分辨率："..width.."*"..height,
+    gc.printf("Current window position (top left): "..flore(winposx+.5).." , "..flore(winposy+.5).."\nCurrent resolution: "..width.."*"..height,
         -6000,-84.8,20000,'center',0,.6,.6)
 end
 function adjust.quit()

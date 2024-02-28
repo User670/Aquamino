@@ -18,7 +18,7 @@ function others.init()
             gc.setLineWidth(3)
             gc.rectangle('line',-w/2,-h/2,w,h,6)
             gc.setColor(1,1,1)
-            gc.printf("返回",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
+            gc.printf("Back",Exo_2_SB,0,0,1280,'center',0,.5,.5,640,84)
         end,
         event=function()
             scene.switch({
@@ -41,8 +41,8 @@ function others.update(dt)
 end
 function others.draw()
     gc.setColor(1,1,1)
-    gc.printf("其它设置",SYHT,0,-460,1280,'center',0,1,1,640,64)
-    gc.printf("暂无内容",SYHT,0,-66,1280,'center',0,1,1,640,64)
+    gc.printf("Others",SYHT,0,-460,1280,'center',0,1,1,640,64)
+    gc.printf("Nothing here yet.",SYHT,0,-66,1280,'center',0,1,1,640,64)
     BUTTON.draw() SLIDER.draw()
 end
 function others.exit()

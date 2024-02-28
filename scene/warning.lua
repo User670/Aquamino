@@ -15,8 +15,8 @@ end
 function warn.mouseP(x,y,button,istouch)
     warn.switch()
 end
-local title="光敏性癫痫警告"
-local txt="极小部分人可能会在看到特定视觉图像（包括可能出现在视频游戏中的闪烁效果或图案）时出现癫痫症状。\n此类症状包括头晕目眩、视线模糊、眼睛或面部抽搐、四肢抽搐、迷失方向感、精神错乱或短暂的意识丧失。\n\n即使没有癫痫史的人也可能出现此类症状。\n如果你出现任何症状，请立即停止游戏并咨询医生。"
+local title="Epilepsy warning"
+local txt="Some people have epileptic sympotoms under certain visual stimuli.\nSymptoms include dizziness, blurred vision, twitching, disorientation, confusion, or brief loss of consciousness.\n\nEven people with no history if epilepsy may have these symptoms.\nShould any symptoms occur, stop playing and consult a doctor."
 function warn.draw()
     gc.clear(.08,.08,.08)
 
